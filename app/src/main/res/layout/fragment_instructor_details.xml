@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_gravity="center"
+    android:gravity="center"
+    tools:context=".ui.InstructorDetailsFragment"
+    android:orientation="vertical">
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_gravity="center"
+        android:foregroundGravity="center"
+        app:cardCornerRadius="10dp"
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_gravity="center"
+        android:foregroundGravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profile_image"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_margin="10dp"
+            android:src="@drawable/ic_teacher"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/instName"
+            android:padding="10dp"
+            android:textSize="18sp"
+            android:textColor="@color/colorAccent"
+            android:layout_gravity="center"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:text="Instructor Name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+            <TextView
+                android:textSize="18sp"
+                android:textColor="@color/colorAccent"
+                android:layout_gravity="center"
+                android:drawablePadding="10dp"
+                android:drawableLeft="@drawable/ic_comment"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:text="3 Reviews"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <TextView
+
+                android:textSize="18sp"
+                android:textColor="@color/colorAccent"
+                android:drawablePadding="10dp"
+                android:drawableLeft="@drawable/ic_user_single"
+                android:layout_gravity="center"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:text=" 28 Students"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:drawablePadding="10dp"
+                android:drawableLeft="@drawable/ic_play_button"
+                android:textSize="18sp"
+                android:textColor="@color/colorAccent"
+                android:layout_gravity="center"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:text=" 30 Courses"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+    </LinearLayout>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/colorPrimaryDark"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Student feedback"
+                    android:textSize="18sp"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:padding="10dp"
+
+                    />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="@color/colorPrimaryDark"/>
+                <RatingBar
+                    android:id="@+id/ratingBarInst"
+                    android:rating="5"
+                    android:isIndicator="true"
+                    android:progressTint="@color/yellow"
+                    android:numStars="5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:scaleX="0.6"
+                    android:scaleY="0.6"
+                    />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+</ScrollView>

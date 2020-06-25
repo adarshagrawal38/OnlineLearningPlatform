@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.IncludesFragment">
+
+
+
+    <androidx.cardview.widget.CardView
+        app:cardCornerRadius="10dp"
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:drawableRight="@drawable/ic_folder"
+                android:layout_marginLeft="12dp"
+                android:textColor="@color/brightGrey"
+                android:textSize="18sp"
+                android:padding="8dp"
+                android:textStyle="bold"
+                android:text="Includes :"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+
+
+            <TextView
+                android:id="@+id/duration"
+                android:drawablePadding="10dp"
+                android:drawableLeft="@drawable/ic_clock"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/brightGrey"
+                android:textSize="18sp"
+                android:padding="10dp"
+                android:textStyle="bold"
+                android:text="01:15:35 Hours On demand videos"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/colorPrimaryDark"/>
+
+            <TextView
+                android:id="@+id/totalLession"
+                android:textColor="@color/brightGrey"
+                android:drawablePadding="10dp"
+                android:drawableLeft="@drawable/ic_paper"
+                android:textSize="18sp"
+                android:padding="10dp"
+                android:textStyle="bold"
+                android:text="28 Lessons"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/colorPrimaryDark"/>
+
+            <TextView
+                android:textColor="@color/brightGrey"
+                android:textSize="18sp"
+                android:drawablePadding="10dp"
+                android:drawableLeft="@drawable/ic_compass"
+                android:padding="10dp"
+                android:textStyle="bold"
+                android:text="Full lifetime access"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/colorPrimaryDark"/>
+            <TextView
+                android:textColor="@color/brightGrey"
+                android:drawablePadding="10dp"
+                android:drawableLeft="@drawable/ic_smartphone"
+                android:textSize="18sp"
+                android:padding="10dp"
+                android:textStyle="bold"
+                android:text="Access on mobile and tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+
+        </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+
+</ScrollView>

@@ -1,0 +1,2 @@
+rootProject.name='KarohamApp'
+include ':app'
